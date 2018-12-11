@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>anders J | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Hero-page/css/main.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav">
+            <li><a href="../Hero-page/index.html">Home</a></li>
+            <li><a href="../Hero-page/news/news.html">News</a></li>
+            <li><a href="../Hero-page/contact.html">Contact</a></li>
+            <li style="float:right"><a class="navlink" href="https://github.com/iDrewn"><img src="../Hero-page/img/icons/github_16x16.png" alt="Picture of the Github logo"></a></li>
+            <li style="float:right"><a class="navlink" href="https://instagram.com/iDrewn"><img src="../Hero-page/img/icons/instagram_16x16.png" alt="Picture of the Github logo"></a></li>
+            <li style="float:right"><a class="navlink" href="https://twitter.com/namgniw"><img src="../Hero-page/img/icons/twitter_16x16.png" alt="Picture of the Github logo"></a></li>
+            <li style="float:right"><a class="navlink" href="../Hero-page/about.html">About</a></li>
+        </ul> 
+    </nav>
+    <section class="hero-image">
+        <section class="hero-text">
+          <h1>I am Anders Johansson</h1>
+          <p>And I'm a Webdeveloper student</p>
+          <input type="button" class="btn" onclick="location.href='../Hero-page/contact.html';" value="Hire me" />
+        </section>
+    </section> 
+    <section class="hero-image2">
+            <section class="hero-text2">
+                    <div class="container">
+                            <div style="text-align:center">
+                              <h2 class="contact">Contact Me</h2>
+                              <p class="contact">If you´re interested or have a question, please leave me a message:</p>
+                            </div>
+                            <div class="row">
+                              <div class="column">
+                                <img src="../Hero-page/img/avatar.jpg" style="width:70%">
+                              </div>
+                              <div class="column">
+                                <form method="GET" action="mailto:drewn@live.se" enctype="text/plain">
+                                  <label for="fname">First Name</label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Your name.." autofocus>
+                                  <label for="lname">Last Name</label>
+                                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                  <label for="country">Country</label>
+                                  <select id="country" name="country">
+                                    <option value="sv-SE">Sweden</option>
+                                    <option value="no-NO">Norway</option>
+                                    <option value="de-DK">Denmark</option>
+                                    <option value="fi-FI">Finland</option>
+                                    <option value="en-US">USA</option>
+                                    <option value="en-GB">Great Britain</option>
+                                  </select>
+                                  <label for="subject">Subject</label>
+                                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                                  <input type="submit" value="Submit">
+                                </form>
+                              </div>
+                            </div>
+                          </div> 
+            </section>
+        </section>
+    <footer>
+        <p class="footer">&copy; 2017
+        <script>
+            new Date().getFullYear()>2017&&document.write("- "+new Date().getFullYear());
+        </script>, anders J.</p>
+    </footer>
+</body>
+</html>

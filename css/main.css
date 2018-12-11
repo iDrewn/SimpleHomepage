@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #111111;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111111; /* 3 #333; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: rgb(78, 78, 78);
+}
+/* Top image */
+.hero-image {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Lower image */
+.hero-image2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #111111;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Textstyling */
+.hero-image h1 {
+    font-size: 5em;
+    color:  rgba(0, 0, 0, 0.9);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+figcaption {
+    color: whitesmoke;
+}
+p {
+    color: whitesmoke;
+}
+div.column p {
+    color: #111111;
+}
+span.nobr { 
+    white-space: nowrap; 
+}
+/* Buttonstyling */
+.hero-image .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.hero-image .btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+/* Lower menu-boxes */
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.w1 {
+    box-shadow: 0px 1px 3px;    /* Box-shadow MUST be removed before entering production! */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.w2 {
+    box-shadow: 0px 1px 3px;    /* Box-shadow MUST be removed before entering production! */
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+}
+.w3 {
+    box-shadow: 0px 1px 3px;    /* Box-shadow MUST be removed before entering production! */
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+.w4 {
+    box-shadow: 0px 1px 3px;    /* Box-shadow MUST be removed before entering production! */
+    text-align: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+/* Lower "menu" */
+.lmenu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.lmenu li a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: whitesmoke;
+}
+.lmenu a:hover {
+    background: darken(green, 5%);
+}
+/* Footer */
+footer {
+    width: 100%;
+    bottom: 0%;
+    color: black;
+    /* position: fixed; */
+    text-align: center;
+}
+/* Link styling */
+a {
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navbar a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover {
+    color: whitesmoke;
+}
+.navbar a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+a.about {
+    position: relative;
+    color: #111111;
+    text-decoration: none;
+}
+section > div > figure.lmenu-img img {
+    width: 50%;
+    opacity: 0.2;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+}
+section > div > figure.lmenu-img img:hover {
+    opacity: 1;
+}
+/* Contactform-styling */
+h2.contact, p.contact,p.fpnews , label {
+    color: #111111;
+}
+* {
+    box-sizing: border-box;
+  } 
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #111111;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+} 
+input[type=submit]:hover {
+    background-color: #111111b0;
+}
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+} 
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 47%;
+    margin-top: 6px;
+    padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+}
+.container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+} 
+/* Create two columns that float next to eachother */
+.column2 {
+    float: left;
+    width: 50%;
+    margin-top: 0.1%;
+    padding: 20px;
+}
+.column2 img {
+    border-radius: 20px;
+    border: 2px solid #111111;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#totopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#totopBtn:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
